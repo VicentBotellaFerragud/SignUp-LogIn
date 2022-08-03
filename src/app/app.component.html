@@ -2,13 +2,29 @@
 
     Sign up/log in with Angular and Firebase
 
-    <button mat-button routerLink="/login">
+    <ng-container *ngIf="authService.currentUser | async as user; else loginBtn">
 
-      <mat-icon>login</mat-icon>
+      <button mat-button (click)="logout()">
 
-      Log in
+        <mat-icon>logout</mat-icon>
+  
+        Log out
+  
+      </button>
 
-    </button>
+    </ng-container>
+
+    <ng-template #loginBtn>
+
+      <button mat-button routerLink="/login">
+
+        <mat-icon>login</mat-icon>
+  
+        Log in
+  
+      </button>
+
+    </ng-template>
 
 </mat-toolbar>
 

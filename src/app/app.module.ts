@@ -18,6 +18,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     MatMenuModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
+    HotToastModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
