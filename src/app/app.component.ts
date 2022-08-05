@@ -16,9 +16,9 @@ export class AppComponent {
   /**
    * Logs out the user by calling the logout function from the authService. It then navigates the user to the landing page.
    */
-  logout() {
+  logOut() {
 
-    this.authService.logout().subscribe(() => {
+    this.authService.logOut().subscribe(() => {
 
       this.router.navigate(['']);
 

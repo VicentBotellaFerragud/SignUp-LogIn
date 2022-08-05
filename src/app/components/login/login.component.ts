@@ -24,14 +24,18 @@ export class LoginComponent implements OnInit {
    * Gets the email value (the email the user enters).
    */
   get email() {
+
     return this.loginForm.get('email');
+
   }
 
   /**
    * Gets the password value (the password the user enters).
    */
   get password() {
+
     return this.loginForm.get('password');
+    
   }
 
   /**
@@ -49,7 +53,7 @@ export class LoginComponent implements OnInit {
 
     let { email, password} = this.loginForm.value;
 
-    this.authService.login(email, password).pipe(
+    this.authService.logIn(email, password).pipe(
 
       this.toast.observe({
 
