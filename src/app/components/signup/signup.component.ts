@@ -51,7 +51,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void { }
 
   /**
-   * Gets the name value (the name the user enters).
+   * Gets the name form control.
    */
   get name() {
 
@@ -60,7 +60,7 @@ export class SignupComponent implements OnInit {
   }
 
   /**
-   * Gets the email value (the email the user enters).
+   * Gets the email form control.
    */
   get email() {
 
@@ -69,7 +69,7 @@ export class SignupComponent implements OnInit {
   }
 
   /**
-   * Gets the password value (the password the user enters).
+   * Gets the password form control.
    */
   get password() {
 
@@ -78,7 +78,7 @@ export class SignupComponent implements OnInit {
   }
 
   /**
-   * Gets the confirmPassword value (the confirmPassword the user enters).
+   * Gets the confirmPassword form control.
    */
   get confirmPassword() {
 

@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(public authService: AuthenticationService, private router: Router) { }
 
   /**
-   * Logs out the user by calling the logout function from the authService. It then navigates the user to the landing page.
+   * Logs out the user by calling the logout function from the authService. It then navigates him/her to the landing page.
    */
   logOut() {
 

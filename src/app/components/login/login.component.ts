@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void { }
 
   /**
-   * Gets the email value (the email the user enters).
+   * Gets the email form control.
    */
   get email() {
 
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   }
 
   /**
-   * Gets the password value (the password the user enters).
+   * Gets the password form control.
    */
   get password() {
 
