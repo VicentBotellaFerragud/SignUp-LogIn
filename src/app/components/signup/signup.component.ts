@@ -5,7 +5,7 @@ import { HotToastService } from '@ngneat/hot-toast';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
 /**
- * Compares the password and the confirmPassword fields and returns null or "passwordsDontMatch" depending on wether the value of the 
+ * Compares the password and the confirmPassword fields and returns null or "passwordsDontMatch" depending on whether the value of the 
  * two fields match or not.
  * @returns - null or "passwordsDontMatch".
  */
